@@ -1,0 +1,35 @@
+.Contact {
+  height: 46px;
+  width: 100%;
+  border: 1.5px #e4e7f0 solid;
+  border-bottom: 0;
+  display: grid;
+  grid-template-columns: 12px 36px 35% 35% auto;
+}
+
+.Contact__Checkbox {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  align-items: center;
+}
+
+.Contact__Name {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: flex;
+  align-items: center;
+}
+
+.Contact__Email {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  display: flex;
+  align-items: center;
+}
+
+.Contact__Org {
+  grid-column-start: 5;
+  display: flex;
+  align-items: center;
+}
