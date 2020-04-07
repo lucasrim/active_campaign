@@ -5,8 +5,12 @@ import { Contact as ContactType } from "../../Types";
 
 import "./ContactsList.css";
 
-const API_URL =
-  "https://cors-anywhere.herokuapp.com/https://active-campaign-code-challenge.herokuapp.com";
+let API_URL = "http://localhost:8080";
+
+if (process.env.NODE_ENV === "production") {
+  API_URL =
+    "https://cors-anywhere.herokuapp.com/https://active-campaign-code-challenge.herokuapp.com";
+}
 
 async function fetchContacts() {
   return fetch(`${API_URL}/contacts`)
